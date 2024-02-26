@@ -1,5 +1,5 @@
 function page() {
-  return <div>meal</div>;
+  return <div>Meal details</div>;
 }
 
 export default page;
