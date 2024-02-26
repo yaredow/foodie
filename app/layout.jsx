@@ -1,5 +1,6 @@
+import MainHeaderBackground from '@/component/main-header/MainHeaderBackground';
 import './globals.css';
-import Header from '@/component/Header';
+import MainHeader from '@/component/main-header/MainHeader';
 
 export const metadata = {
   title: 'NextLevel Food',
@@ -9,9 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
+      <body suppressHydrationWarning={true}>
+        <MainHeaderBackground />
+        <MainHeader />
+        <div className="header-background">{children}</div>
       </body>
     </html>
   );
